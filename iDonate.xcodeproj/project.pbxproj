@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F057BB629F1DB7600B2685C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F057BB529F1DB7600B2685C /* Launch Screen.storyboard */; };
+		7F06735629EB453500716796 /* ConfirmAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06735529EB453500716796 /* ConfirmAccountView.swift */; };
+		7F06735829EB454900716796 /* ConfirmAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06735729EB454900716796 /* ConfirmAccountViewModel.swift */; };
+		7F06735A29EC922600716796 /* CustomRedActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06735929EC922600716796 /* CustomRedActionButton.swift */; };
+		7F06735C29EC94D600716796 /* CustomErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06735B29EC94D600716796 /* CustomErrorMessage.swift */; };
+		7F06735E29EC988600716796 /* CustomTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F06735D29EC988600716796 /* CustomTitleText.swift */; };
+		7F15878329F6BB3700E538DC /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F15878229F6BB3700E538DC /* NotificationHandler.swift */; };
+		7F15878529F6C21C00E538DC /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F15878429F6C21C00E538DC /* NotificationScheduler.swift */; };
+		7F15878729F6D23B00E538DC /* DidYouKnowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F15878629F6D23B00E538DC /* DidYouKnowData.swift */; };
+		7F25010529E33E9B00ED1F0D /* VerifyEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25010429E33E9B00ED1F0D /* VerifyEmailView.swift */; };
+		7F25010729E33EAA00ED1F0D /* VerifyEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25010629E33EAA00ED1F0D /* VerifyEmailViewModel.swift */; };
+		7F25010A29E3464E00ED1F0D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25010929E3464E00ED1F0D /* Color.swift */; };
+		7F25010C29E3500500ED1F0D /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25010B29E3500500ED1F0D /* CustomBackButton.swift */; };
+		7F25010F29E48F3600ED1F0D /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25010E29E48F3600ED1F0D /* ResetPasswordView.swift */; };
+		7F25011129E48F4D00ED1F0D /* RestPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25011029E48F4D00ED1F0D /* RestPasswordViewModel.swift */; };
+		7F2C250E299F779900D365F8 /* iDonateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C250D299F779900D365F8 /* iDonateApp.swift */; };
+		7F2C2510299F779900D365F8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C250F299F779900D365F8 /* LoginView.swift */; };
+		7F2C2512299F779B00D365F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2C2511299F779B00D365F8 /* Assets.xcassets */; };
+		7F2C2515299F779B00D365F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2C2514299F779B00D365F8 /* Preview Assets.xcassets */; };
+		7F2C2524299F936300D365F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C2523299F936300D365F8 /* Constants.swift */; };
+		7F2C252B299FE00600D365F8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C252A299FE00600D365F8 /* CustomTextField.swift */; };
+		7F2C252D29A3671B00D365F8 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C252C29A3671B00D365F8 /* CustomSecureField.swift */; };
+		7F2C252F29A36AE200D365F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C252E29A36AE200D365F8 /* ContentView.swift */; };
+		7F2C253129A36DC300D365F8 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C253029A36DC300D365F8 /* RegisterView.swift */; };
+		7F2C253829A377EA00D365F8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C253729A377EA00D365F8 /* HomeView.swift */; };
+		7F2C253D29A3860100D365F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C253C29A3860100D365F8 /* User.swift */; };
+		7F2C254129A388F700D365F8 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C254029A388F700D365F8 /* Donation.swift */; };
+		7F2C254529A4FAD000D365F8 /* DonationNeededView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C254429A4FAD000D365F8 /* DonationNeededView.swift */; };
+		7F31EF1029E5DD220000D2EA /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31EF0F29E5DD220000D2EA /* EditProfileView.swift */; };
+		7F31EF1229E5DD2F0000D2EA /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F31EF1129E5DD2F0000D2EA /* EditProfileViewModel.swift */; };
+		7F39D75629DAC1C100E30D57 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39D75529DAC1C100E30D57 /* Persistence.swift */; };
+		7F42EE2C29BE4D3F00CEAFA3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE2B29BE4D3F00CEAFA3 /* HomeViewModel.swift */; };
+		7F42EE3029BE552800CEAFA3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE2F29BE552800CEAFA3 /* DetailView.swift */; };
+		7F42EE3229BF0B9900CEAFA3 /* CustomBloodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE3129BF0B9900CEAFA3 /* CustomBloodImage.swift */; };
+		7F42EE3429BF0F8300CEAFA3 /* DonationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE3329BF0F8300CEAFA3 /* DonationType.swift */; };
+		7F42EE3629BF21ED00CEAFA3 /* DonationNeededViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE3529BF21ED00CEAFA3 /* DonationNeededViewModel.swift */; };
+		7F42EE3829BF245B00CEAFA3 /* CustomBloodTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE3729BF245B00CEAFA3 /* CustomBloodTypePicker.swift */; };
+		7F42EE3A29BF24CA00CEAFA3 /* CustomCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE3929BF24CA00CEAFA3 /* CustomCountryPicker.swift */; };
+		7F42EE3C29BF260900CEAFA3 /* CustomDonationTypePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42EE3B29BF260900CEAFA3 /* CustomDonationTypePicker.swift */; };
+		7F6501662A48512F000A8AC9 /* ReportReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6501652A48512F000A8AC9 /* ReportReason.swift */; };
+		7F65016B2A4851D3000A8AC9 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65016A2A4851D3000A8AC9 /* ReportView.swift */; };
+		7F65016D2A4851E5000A8AC9 /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65016C2A4851E5000A8AC9 /* ReportViewModel.swift */; };
+		7F65016F2A48B6AE000A8AC9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65016E2A48B6AE000A8AC9 /* View.swift */; };
+		7F6501732A48B70F000A8AC9 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6501722A48B70F000A8AC9 /* ToastView.swift */; };
+		7F77D45F2A2D356700E30BD0 /* CustomPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F77D45E2A2D356700E30BD0 /* CustomPhoneTextField.swift */; };
+		7F77D4C82A379A9A00E30BD0 /* iDonateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F77D4C72A379A9A00E30BD0 /* iDonateError.swift */; };
+		7F99C4B129E7D86100CC0F66 /* BloodTypeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99C4B029E7D86100CC0F66 /* BloodTypeUtil.swift */; };
+		7F99C4B829E8B66300CC0F66 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99C4B729E8B66300CC0F66 /* ChangePasswordView.swift */; };
+		7F99C4BA29E8B67500CC0F66 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F99C4B929E8B67500CC0F66 /* ChangePasswordViewModel.swift */; };
+		7F9E050A29DDFB0A00D11C13 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E050929DDFB0A00D11C13 /* DetailViewModel.swift */; };
+		7FB443A329B5E1CB0046561D /* BloodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB443A229B5E1CB0046561D /* BloodType.swift */; };
+		7FB443A529B5EB5A0046561D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB443A429B5EB5A0046561D /* Country.swift */; };
+		7FB443A929B625670046561D /* CustomNavigationLinkForRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB443A829B625670046561D /* CustomNavigationLinkForRegister.swift */; };
+		7FBCBBC229F832930065D966 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBCBBC129F832930065D966 /* NetworkMonitor.swift */; };
+		7FBCBBC529F833080065D966 /* NoWifiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBCBBC429F833080065D966 /* NoWifiView.swift */; };
+		7FCF4F3C29C39A9D0066EC6D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF4F3B29C39A9D0066EC6D /* Logger.swift */; };
+		7FCF4F3E29C520060066EC6D /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF4F3D29C520060066EC6D /* Hospitals.swift */; };
+		7FCF4F4329C52BBB0066EC6D /* ChooseLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF4F4229C52BBB0066EC6D /* ChooseLocationView.swift */; };
+		7FD1A36B29CCEC800034D457 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1A36A29CCEC800034D457 /* RegisterViewModel.swift */; };
+		7FD1A36F29CF7D1E0034D457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FD1A36E29CF7D1E0034D457 /* GoogleService-Info.plist */; };
+		7FD1A37129D0C0EB0034D457 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1A37029D0C0EB0034D457 /* LoginViewModel.swift */; };
+		7FD1A37329D0CF160034D457 /* CustomLogOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD1A37229D0CF160034D457 /* CustomLogOutButton.swift */; };
+		7FFBE0DA2A4F5F7A00AB345F /* NoDonationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBE0D92A4F5F7A00AB345F /* NoDonationsView.swift */; };
+		E7A00A378FB40EF5087BD617 /* Pods_iDonate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09335B68EE610B8A670CD5E6 /* Pods_iDonate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09335B68EE610B8A670CD5E6 /* Pods_iDonate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDonate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B77D6D65E89F8AEBD641E47 /* Pods-iDonate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDonate.release.xcconfig"; path = "Target Support Files/Pods-iDonate/Pods-iDonate.release.xcconfig"; sourceTree = "<group>"; };
+		6DB1E7846E2F02BA54447A58 /* Pods-iDonate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDonate.debug.xcconfig"; path = "Target Support Files/Pods-iDonate/Pods-iDonate.debug.xcconfig"; sourceTree = "<group>"; };
+		7F057BB529F1DB7600B2685C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7F057BB729F1DC0300B2685C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F06735529EB453500716796 /* ConfirmAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAccountView.swift; sourceTree = "<group>"; };
+		7F06735729EB454900716796 /* ConfirmAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmAccountViewModel.swift; sourceTree = "<group>"; };
+		7F06735929EC922600716796 /* CustomRedActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRedActionButton.swift; sourceTree = "<group>"; };
+		7F06735B29EC94D600716796 /* CustomErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrorMessage.swift; sourceTree = "<group>"; };
+		7F06735D29EC988600716796 /* CustomTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleText.swift; sourceTree = "<group>"; };
+		7F15878229F6BB3700E538DC /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		7F15878429F6C21C00E538DC /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		7F15878629F6D23B00E538DC /* DidYouKnowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidYouKnowData.swift; sourceTree = "<group>"; };
+		7F25010429E33E9B00ED1F0D /* VerifyEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailView.swift; sourceTree = "<group>"; };
+		7F25010629E33EAA00ED1F0D /* VerifyEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailViewModel.swift; sourceTree = "<group>"; };
+		7F25010929E3464E00ED1F0D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7F25010B29E3500500ED1F0D /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		7F25010E29E48F3600ED1F0D /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		7F25011029E48F4D00ED1F0D /* RestPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordViewModel.swift; sourceTree = "<group>"; };
+		7F2C250A299F779900D365F8 /* iDonate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDonate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2C250D299F779900D365F8 /* iDonateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDonateApp.swift; sourceTree = "<group>"; };
+		7F2C250F299F779900D365F8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7F2C2511299F779B00D365F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F2C2514299F779B00D365F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F2C2523299F936300D365F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7F2C252A299FE00600D365F8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7F2C252C29A3671B00D365F8 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		7F2C252E29A36AE200D365F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F2C253029A36DC300D365F8 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		7F2C253729A377EA00D365F8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7F2C253C29A3860100D365F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F2C254029A388F700D365F8 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		7F2C254429A4FAD000D365F8 /* DonationNeededView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationNeededView.swift; sourceTree = "<group>"; };
+		7F31EF0F29E5DD220000D2EA /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		7F31EF1129E5DD2F0000D2EA /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		7F39D75529DAC1C100E30D57 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7F42EE2B29BE4D3F00CEAFA3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7F42EE2F29BE552800CEAFA3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		7F42EE3129BF0B9900CEAFA3 /* CustomBloodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBloodImage.swift; sourceTree = "<group>"; };
+		7F42EE3329BF0F8300CEAFA3 /* DonationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationType.swift; sourceTree = "<group>"; };
+		7F42EE3529BF21ED00CEAFA3 /* DonationNeededViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationNeededViewModel.swift; sourceTree = "<group>"; };
+		7F42EE3729BF245B00CEAFA3 /* CustomBloodTypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBloodTypePicker.swift; sourceTree = "<group>"; };
+		7F42EE3929BF24CA00CEAFA3 /* CustomCountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCountryPicker.swift; sourceTree = "<group>"; };
+		7F42EE3B29BF260900CEAFA3 /* CustomDonationTypePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDonationTypePicker.swift; sourceTree = "<group>"; };
+		7F6501652A48512F000A8AC9 /* ReportReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportReason.swift; sourceTree = "<group>"; };
+		7F65016A2A4851D3000A8AC9 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		7F65016C2A4851E5000A8AC9 /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
+		7F65016E2A48B6AE000A8AC9 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		7F6501722A48B70F000A8AC9 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		7F77D45E2A2D356700E30BD0 /* CustomPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPhoneTextField.swift; sourceTree = "<group>"; };
+		7F77D4C72A379A9A00E30BD0 /* iDonateError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDonateError.swift; sourceTree = "<group>"; };
+		7F99C4B029E7D86100CC0F66 /* BloodTypeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodTypeUtil.swift; sourceTree = "<group>"; };
+		7F99C4B729E8B66300CC0F66 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		7F99C4B929E8B67500CC0F66 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		7F9E050929DDFB0A00D11C13 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		7FB443A229B5E1CB0046561D /* BloodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodType.swift; sourceTree = "<group>"; };
+		7FB443A429B5EB5A0046561D /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		7FB443A829B625670046561D /* CustomNavigationLinkForRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLinkForRegister.swift; sourceTree = "<group>"; };
+		7FBCBBC129F832930065D966 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		7FBCBBC429F833080065D966 /* NoWifiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoWifiView.swift; sourceTree = "<group>"; };
+		7FCF4F3B29C39A9D0066EC6D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7FCF4F3D29C520060066EC6D /* Hospitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospitals.swift; sourceTree = "<group>"; };
+		7FCF4F4229C52BBB0066EC6D /* ChooseLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseLocationView.swift; sourceTree = "<group>"; };
+		7FD1A36A29CCEC800034D457 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		7FD1A36E29CF7D1E0034D457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7FD1A37029D0C0EB0034D457 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7FD1A37229D0CF160034D457 /* CustomLogOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogOutButton.swift; sourceTree = "<group>"; };
+		7FFBE0D92A4F5F7A00AB345F /* NoDonationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDonationsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F2C2507299F779900D365F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A00A378FB40EF5087BD617 /* Pods_iDonate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F06735429EB451700716796 /* Confirm Account */ = {
+			isa = PBXGroup;
+			children = (
+				7F06735529EB453500716796 /* ConfirmAccountView.swift */,
+				7F06735729EB454900716796 /* ConfirmAccountViewModel.swift */,
+			);
+			path = "Confirm Account";
+			sourceTree = "<group>";
+		};
+		7F15878129F6BB0200E538DC /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				7F15878229F6BB3700E538DC /* NotificationHandler.swift */,
+				7F15878429F6C21C00E538DC /* NotificationScheduler.swift */,
+				7F15878629F6D23B00E538DC /* DidYouKnowData.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		7F25010329E33E8900ED1F0D /* Verify Email */ = {
+			isa = PBXGroup;
+			children = (
+				7F25010429E33E9B00ED1F0D /* VerifyEmailView.swift */,
+				7F25010629E33EAA00ED1F0D /* VerifyEmailViewModel.swift */,
+			);
+			path = "Verify Email";
+			sourceTree = "<group>";
+		};
+		7F25010829E3462D00ED1F0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F25010929E3464E00ED1F0D /* Color.swift */,
+				7F65016E2A48B6AE000A8AC9 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F25010D29E48F1900ED1F0D /* Reset Password */ = {
+			isa = PBXGroup;
+			children = (
+				7F25010E29E48F3600ED1F0D /* ResetPasswordView.swift */,
+				7F25011029E48F4D00ED1F0D /* RestPasswordViewModel.swift */,
+			);
+			path = "Reset Password";
+			sourceTree = "<group>";
+		};
+		7F2C2501299F779900D365F8 = {
+			isa = PBXGroup;
+			children = (
+				7F2C250C299F779900D365F8 /* iDonate */,
+				7F2C250B299F779900D365F8 /* Products */,
+				BB34A941CA7E4FCF1BD1779D /* Pods */,
+				CE8850E978C98937435CFE6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F2C250B299F779900D365F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C250A299F779900D365F8 /* iDonate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F2C250C299F779900D365F8 /* iDonate */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C250D299F779900D365F8 /* iDonateApp.swift */,
+				7F77D4C62A37955400E30BD0 /* Data */,
+				7F2C253229A3708500D365F8 /* View */,
+				7F2C2522299F933500D365F8 /* Utils */,
+				7F2C2511299F779B00D365F8 /* Assets.xcassets */,
+				7F057BB529F1DB7600B2685C /* Launch Screen.storyboard */,
+				7F057BB729F1DC0300B2685C /* Info.plist */,
+				7FD1A36E29CF7D1E0034D457 /* GoogleService-Info.plist */,
+				7F2C2513299F779B00D365F8 /* Preview Content */,
+			);
+			path = iDonate;
+			sourceTree = "<group>";
+		};
+		7F2C2513299F779B00D365F8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C2514299F779B00D365F8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F2C2522299F933500D365F8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C2523299F936300D365F8 /* Constants.swift */,
+				7FBCBBC029F832740065D966 /* Network Monitoring */,
+				7F15878129F6BB0200E538DC /* Notifications */,
+				7F99C4AF29E7D84600CC0F66 /* Blood Type */,
+				7F25010829E3462D00ED1F0D /* Extensions */,
+				7F39D75429DAC19300E30D57 /* UserDefaults */,
+				7FCF4F3A29C39A7B0066EC6D /* Debuggung Tools */,
+				7FB443A129B5E1AB0046561D /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F2C2529299FDF8900D365F8 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7F6501772A48C16E000A8AC9 /* Images */,
+				7F6501762A48C14E000A8AC9 /* Pickers */,
+				7F6501752A48C130000A8AC9 /* Buttons */,
+				7F6501742A48C11E000A8AC9 /* Texts */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		7F2C253229A3708500D365F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF4F3F29C52B6A0066EC6D /* Main Views */,
+				7FCF4F4029C52B850066EC6D /* Extra Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F2C253329A370D700D365F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C253C29A3860100D365F8 /* User.swift */,
+				7F2C254029A388F700D365F8 /* Donation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F2C253429A3715300D365F8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C250F299F779900D365F8 /* LoginView.swift */,
+				7FD1A37029D0C0EB0034D457 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7F2C253529A3716600D365F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C253729A377EA00D365F8 /* HomeView.swift */,
+				7F42EE2B29BE4D3F00CEAFA3 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7F2C253629A3717700D365F8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C253029A36DC300D365F8 /* RegisterView.swift */,
+				7FD1A36A29CCEC800034D457 /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		7F2C254629A4FAD800D365F8 /* DonationNeeded */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C254429A4FAD000D365F8 /* DonationNeededView.swift */,
+				7F42EE3529BF21ED00CEAFA3 /* DonationNeededViewModel.swift */,
+			);
+			path = DonationNeeded;
+			sourceTree = "<group>";
+		};
+		7F31EF0E29E5DD0E0000D2EA /* Edit Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7F31EF0F29E5DD220000D2EA /* EditProfileView.swift */,
+				7F31EF1129E5DD2F0000D2EA /* EditProfileViewModel.swift */,
+			);
+			path = "Edit Profile";
+			sourceTree = "<group>";
+		};
+		7F39D75429DAC19300E30D57 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				7F39D75529DAC1C100E30D57 /* Persistence.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		7F6501672A4851A3000A8AC9 /* Report Post */ = {
+			isa = PBXGroup;
+			children = (
+				7F65016A2A4851D3000A8AC9 /* ReportView.swift */,
+				7F65016C2A4851E5000A8AC9 /* ReportViewModel.swift */,
+			);
+			path = "Report Post";
+			sourceTree = "<group>";
+		};
+		7F6501742A48C11E000A8AC9 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				7F06735B29EC94D600716796 /* CustomErrorMessage.swift */,
+				7F6501722A48B70F000A8AC9 /* ToastView.swift */,
+				7F06735D29EC988600716796 /* CustomTitleText.swift */,
+				7F77D45E2A2D356700E30BD0 /* CustomPhoneTextField.swift */,
+				7F2C252C29A3671B00D365F8 /* CustomSecureField.swift */,
+				7F2C252A299FE00600D365F8 /* CustomTextField.swift */,
+			);
+			path = Texts;
+			sourceTree = "<group>";
+		};
+		7F6501752A48C130000A8AC9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7FB443A829B625670046561D /* CustomNavigationLinkForRegister.swift */,
+				7FD1A37229D0CF160034D457 /* CustomLogOutButton.swift */,
+				7F25010B29E3500500ED1F0D /* CustomBackButton.swift */,
+				7F06735929EC922600716796 /* CustomRedActionButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		7F6501762A48C14E000A8AC9 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				7F42EE3729BF245B00CEAFA3 /* CustomBloodTypePicker.swift */,
+				7F42EE3929BF24CA00CEAFA3 /* CustomCountryPicker.swift */,
+				7F42EE3B29BF260900CEAFA3 /* CustomDonationTypePicker.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		7F6501772A48C16E000A8AC9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7F42EE3129BF0B9900CEAFA3 /* CustomBloodImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7F77D4C62A37955400E30BD0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF4F3D29C520060066EC6D /* Hospitals.swift */,
+				7F2C253329A370D700D365F8 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7F99C4AF29E7D84600CC0F66 /* Blood Type */ = {
+			isa = PBXGroup;
+			children = (
+				7F99C4B029E7D86100CC0F66 /* BloodTypeUtil.swift */,
+			);
+			path = "Blood Type";
+			sourceTree = "<group>";
+		};
+		7F99C4B629E8B64B00CC0F66 /* Change Password */ = {
+			isa = PBXGroup;
+			children = (
+				7F99C4B729E8B66300CC0F66 /* ChangePasswordView.swift */,
+				7F99C4B929E8B67500CC0F66 /* ChangePasswordViewModel.swift */,
+			);
+			path = "Change Password";
+			sourceTree = "<group>";
+		};
+		7F9E050829DDFAEE00D11C13 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7F42EE2F29BE552800CEAFA3 /* DetailView.swift */,
+				7F9E050929DDFB0A00D11C13 /* DetailViewModel.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		7FB443A129B5E1AB0046561D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				7FB443A229B5E1CB0046561D /* BloodType.swift */,
+				7FB443A429B5EB5A0046561D /* Country.swift */,
+				7F42EE3329BF0F8300CEAFA3 /* DonationType.swift */,
+				7F77D4C72A379A9A00E30BD0 /* iDonateError.swift */,
+				7F6501652A48512F000A8AC9 /* ReportReason.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		7FBCBBC029F832740065D966 /* Network Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				7FBCBBC129F832930065D966 /* NetworkMonitor.swift */,
+			);
+			path = "Network Monitoring";
+			sourceTree = "<group>";
+		};
+		7FBCBBC329F832F30065D966 /* NoWifiView */ = {
+			isa = PBXGroup;
+			children = (
+				7FBCBBC429F833080065D966 /* NoWifiView.swift */,
+			);
+			path = NoWifiView;
+			sourceTree = "<group>";
+		};
+		7FCF4F3A29C39A7B0066EC6D /* Debuggung Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF4F3B29C39A9D0066EC6D /* Logger.swift */,
+			);
+			path = "Debuggung Tools";
+			sourceTree = "<group>";
+		};
+		7FCF4F3F29C52B6A0066EC6D /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F2C253629A3717700D365F8 /* Register */,
+				7F2C253429A3715300D365F8 /* Login */,
+				7F2C252E29A36AE200D365F8 /* ContentView.swift */,
+				7F9E050829DDFAEE00D11C13 /* DetailView */,
+				7F2C253529A3716600D365F8 /* Home */,
+				7F2C254629A4FAD800D365F8 /* DonationNeeded */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		7FCF4F4029C52B850066EC6D /* Extra Views */ = {
+			isa = PBXGroup;
+			children = (
+				7FFBE0D82A4F5F5D00AB345F /* No Donations View */,
+				7F6501672A4851A3000A8AC9 /* Report Post */,
+				7FBCBBC329F832F30065D966 /* NoWifiView */,
+				7F06735429EB451700716796 /* Confirm Account */,
+				7F99C4B629E8B64B00CC0F66 /* Change Password */,
+				7F31EF0E29E5DD0E0000D2EA /* Edit Profile */,
+				7F25010D29E48F1900ED1F0D /* Reset Password */,
+				7F25010329E33E8900ED1F0D /* Verify Email */,
+				7FCF4F4129C52BA50066EC6D /* ChooseLocation */,
+				7F2C2529299FDF8900D365F8 /* Subviews */,
+			);
+			path = "Extra Views";
+			sourceTree = "<group>";
+		};
+		7FCF4F4129C52BA50066EC6D /* ChooseLocation */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF4F4229C52BBB0066EC6D /* ChooseLocationView.swift */,
+			);
+			path = ChooseLocation;
+			sourceTree = "<group>";
+		};
+		7FFBE0D82A4F5F5D00AB345F /* No Donations View */ = {
+			isa = PBXGroup;
+			children = (
+				7FFBE0D92A4F5F7A00AB345F /* NoDonationsView.swift */,
+			);
+			path = "No Donations View";
+			sourceTree = "<group>";
+		};
+		BB34A941CA7E4FCF1BD1779D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DB1E7846E2F02BA54447A58 /* Pods-iDonate.debug.xcconfig */,
+				4B77D6D65E89F8AEBD641E47 /* Pods-iDonate.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE8850E978C98937435CFE6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09335B68EE610B8A670CD5E6 /* Pods_iDonate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F2C2509299F779900D365F8 /* iDonate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2C2518299F779B00D365F8 /* Build configuration list for PBXNativeTarget "iDonate" */;
+			buildPhases = (
+				D9B4A40329DBFBF196A1BBFD /* [CP] Check Pods Manifest.lock */,
+				7F2C2506299F779900D365F8 /* Sources */,
+				7F2C2507299F779900D365F8 /* Frameworks */,
+				7F2C2508299F779900D365F8 /* Resources */,
+				BCFC618424FFB6CB86AF85F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDonate;
+			productName = iDonate;
+			productReference = 7F2C250A299F779900D365F8 /* iDonate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F2C2502299F779900D365F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					7F2C2509299F779900D365F8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 7F2C2505299F779900D365F8 /* Build configuration list for PBXProject "iDonate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F2C2501299F779900D365F8;
+			productRefGroup = 7F2C250B299F779900D365F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F2C2509299F779900D365F8 /* iDonate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F2C2508299F779900D365F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD1A36F29CF7D1E0034D457 /* GoogleService-Info.plist in Resources */,
+				7F2C2515299F779B00D365F8 /* Preview Assets.xcassets in Resources */,
+				7F057BB629F1DB7600B2685C /* Launch Screen.storyboard in Resources */,
+				7F2C2512299F779B00D365F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCFC618424FFB6CB86AF85F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDonate/Pods-iDonate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iDonate/Pods-iDonate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iDonate/Pods-iDonate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9B4A40329DBFBF196A1BBFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDonate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F2C2506299F779900D365F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F06735E29EC988600716796 /* CustomTitleText.swift in Sources */,
+				7F25010529E33E9B00ED1F0D /* VerifyEmailView.swift in Sources */,
+				7FB443A929B625670046561D /* CustomNavigationLinkForRegister.swift in Sources */,
+				7FD1A36B29CCEC800034D457 /* RegisterViewModel.swift in Sources */,
+				7F42EE3A29BF24CA00CEAFA3 /* CustomCountryPicker.swift in Sources */,
+				7F42EE2C29BE4D3F00CEAFA3 /* HomeViewModel.swift in Sources */,
+				7FD1A37329D0CF160034D457 /* CustomLogOutButton.swift in Sources */,
+				7F25010F29E48F3600ED1F0D /* ResetPasswordView.swift in Sources */,
+				7F2C254529A4FAD000D365F8 /* DonationNeededView.swift in Sources */,
+				7FCF4F4329C52BBB0066EC6D /* ChooseLocationView.swift in Sources */,
+				7F42EE3429BF0F8300CEAFA3 /* DonationType.swift in Sources */,
+				7F2C252B299FE00600D365F8 /* CustomTextField.swift in Sources */,
+				7F2C2510299F779900D365F8 /* LoginView.swift in Sources */,
+				7F2C250E299F779900D365F8 /* iDonateApp.swift in Sources */,
+				7FCF4F3C29C39A9D0066EC6D /* Logger.swift in Sources */,
+				7F2C253129A36DC300D365F8 /* RegisterView.swift in Sources */,
+				7F2C252F29A36AE200D365F8 /* ContentView.swift in Sources */,
+				7F42EE3829BF245B00CEAFA3 /* CustomBloodTypePicker.swift in Sources */,
+				7FBCBBC529F833080065D966 /* NoWifiView.swift in Sources */,
+				7F31EF1229E5DD2F0000D2EA /* EditProfileViewModel.swift in Sources */,
+				7F6501732A48B70F000A8AC9 /* ToastView.swift in Sources */,
+				7F25010729E33EAA00ED1F0D /* VerifyEmailViewModel.swift in Sources */,
+				7F06735A29EC922600716796 /* CustomRedActionButton.swift in Sources */,
+				7F39D75629DAC1C100E30D57 /* Persistence.swift in Sources */,
+				7FD1A37129D0C0EB0034D457 /* LoginViewModel.swift in Sources */,
+				7F99C4B829E8B66300CC0F66 /* ChangePasswordView.swift in Sources */,
+				7F2C253829A377EA00D365F8 /* HomeView.swift in Sources */,
+				7FB443A329B5E1CB0046561D /* BloodType.swift in Sources */,
+				7F2C2524299F936300D365F8 /* Constants.swift in Sources */,
+				7F31EF1029E5DD220000D2EA /* EditProfileView.swift in Sources */,
+				7F6501662A48512F000A8AC9 /* ReportReason.swift in Sources */,
+				7F15878529F6C21C00E538DC /* NotificationScheduler.swift in Sources */,
+				7F25010C29E3500500ED1F0D /* CustomBackButton.swift in Sources */,
+				7F42EE3629BF21ED00CEAFA3 /* DonationNeededViewModel.swift in Sources */,
+				7F42EE3C29BF260900CEAFA3 /* CustomDonationTypePicker.swift in Sources */,
+				7F15878329F6BB3700E538DC /* NotificationHandler.swift in Sources */,
+				7F99C4B129E7D86100CC0F66 /* BloodTypeUtil.swift in Sources */,
+				7F2C254129A388F700D365F8 /* Donation.swift in Sources */,
+				7F2C253D29A3860100D365F8 /* User.swift in Sources */,
+				7F65016B2A4851D3000A8AC9 /* ReportView.swift in Sources */,
+				7F06735629EB453500716796 /* ConfirmAccountView.swift in Sources */,
+				7F65016D2A4851E5000A8AC9 /* ReportViewModel.swift in Sources */,
+				7FBCBBC229F832930065D966 /* NetworkMonitor.swift in Sources */,
+				7F42EE3029BE552800CEAFA3 /* DetailView.swift in Sources */,
+				7FB443A529B5EB5A0046561D /* Country.swift in Sources */,
+				7F65016F2A48B6AE000A8AC9 /* View.swift in Sources */,
+				7F77D4C82A379A9A00E30BD0 /* iDonateError.swift in Sources */,
+				7F06735C29EC94D600716796 /* CustomErrorMessage.swift in Sources */,
+				7F2C252D29A3671B00D365F8 /* CustomSecureField.swift in Sources */,
+				7F06735829EB454900716796 /* ConfirmAccountViewModel.swift in Sources */,
+				7F25010A29E3464E00ED1F0D /* Color.swift in Sources */,
+				7F25011129E48F4D00ED1F0D /* RestPasswordViewModel.swift in Sources */,
+				7F15878729F6D23B00E538DC /* DidYouKnowData.swift in Sources */,
+				7F99C4BA29E8B67500CC0F66 /* ChangePasswordViewModel.swift in Sources */,
+				7FFBE0DA2A4F5F7A00AB345F /* NoDonationsView.swift in Sources */,
+				7FCF4F3E29C520060066EC6D /* Hospitals.swift in Sources */,
+				7F9E050A29DDFB0A00D11C13 /* DetailViewModel.swift in Sources */,
+				7F42EE3229BF0B9900CEAFA3 /* CustomBloodImage.swift in Sources */,
+				7F77D45F2A2D356700E30BD0 /* CustomPhoneTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7F2C2516299F779B00D365F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F2C2517299F779B00D365F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F2C2519299F779B00D365F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB1E7846E2F02BA54447A58 /* Pods-iDonate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iDonate/Preview Content\"";
+				DEVELOPMENT_TEAM = P63VAPNRN9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iDonate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iDonate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Karim.Sakr.iDonate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F2C251A299F779B00D365F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B77D6D65E89F8AEBD641E47 /* Pods-iDonate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iDonate/Preview Content\"";
+				DEVELOPMENT_TEAM = P63VAPNRN9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iDonate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iDonate;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Karim.Sakr.iDonate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F2C2505299F779900D365F8 /* Build configuration list for PBXProject "iDonate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2C2516299F779B00D365F8 /* Debug */,
+				7F2C2517299F779B00D365F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2C2518299F779B00D365F8 /* Build configuration list for PBXNativeTarget "iDonate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2C2519299F779B00D365F8 /* Debug */,
+				7F2C251A299F779B00D365F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F2C2502299F779900D365F8 /* Project object */;
+}
